@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Edu Watch</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo/logo3 .png">
+  <script src="https://kit.fontawesome.com/b82ae2215b.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #E9F7EF">
+  <!-- NavBar -->
+  <nav id="navmenu" class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand" href="#home">
+      <div class="d-flex align-items-center">
+        <img src="./Images/logo/logo2.png" width="150" height="75" class="d-inline-block align-top" loading="lazy">
+        <!-- <span class="ml-2">Edu Watch</span> -->
+      </div>
+    </a>
+    <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span id="nav-toggle-icon" class="fas fa-ellipsis-v"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="navmenu-links" class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Scope
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#project-scope">Literature Survey</a>
+            <a class="dropdown-item" href="#research_gap">Research Gap</a>
+            <a class="dropdown-item" href="#research_problem">Research Problem & Solution</a>
+            <a class="dropdown-item" href="#research_objectives">Research Objectives</a>
+            <a class="dropdown-item" href="#methodology">Methodology</a>
+            <a class="dropdown-item" href="#tech_used">Technologies</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#milestones">Milestones</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Downloads
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#downloads">Documents</a>
+            <a class="dropdown-item" href="#presentations">Presentations</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-cta">
+        <h1>BIOACOUSTIC AND X-RAY ANALYSIS <br />FOR ADVANCED
+          RESPIRATORY DISEASE DIAGNOSTICS
+        </h1>
+        <a class="btn btn-outline-light" type="button" href="#project-scope"><span class="btn-text">Learn
+            More</span><span class="fas fa-chevron-right btn-icon"></span></a>
+      </div>
+    </div>
+    <div class="hero-cover">
+      <img class="spotlight-image" src="./Images/other/skel2.png" />
+      <img class="hero-image" src="./Images/other/background2.jpg" />
+    </div>
+  </section>
+  <!-- project-scope -->
+  <section id="project-scope" class="main-sections" style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">Project Scope</h5>
+      <!-- Literature Survey -->
+      <div id="literature" class="sub-section">
+        <h2>Literature Survey</h2>
+        <div class="row">
+          <!-- <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5 order-last">
+            <div class="section-left">
+              <div class="section-figure ">
+                <img style="align-items:center" src="./Images/other/lap2mockup.png" width="100%">
+              </div>
+            </div>
+          </div> -->
+          <!-- <div id="project-scope-right" class=" col-md-6 col-sm-12 pt-lg-5 justify-text"> -->
+          <div id="project-scope-right" class="justify-text"></div>
+          <br />
+          <p>
+            Respiratory diseases pose a significant global health challenge, necessitating the
+development of precise, non-invasive diagnostic tools. This thesis explores the integration
+of explainable artificial intelligence (AI) in 1ioacoustics and X-ray analysis to enhance
+respiratory disease diagnostics. The focus is on developing and optimizing hardware and
+software systems to capture 1ioacoustics signals from the human body, aiming to improve
+the sensitivity and comfort of sensors, ensure long-term stability and performance,
+consider user acceptance, and implement robust privacy measures. Additionally,
+designing cost-effective solutions is crucial to making these advanced diagnostic
+technologies accessible to a broader population
+            <br />
+            <br />
+            The research investigates two innovative methods for detecting breath sounds, the
+MicrotoneStethoscope and the Dual Rhythm Stethoscope. The MicrotoneStethoscope
+utilizes an ESP32 microcontroller, an INMP441 omnidirectional microphone, clips,
+power cables, jumper wires, clip headers, and a switch. Data is captured using the Arduino
+IDE, transmitted to an AWS database, and converted to MP3 format using WinSCP.
+Conversely, the Dual Rhythm Stethoscope incorporates a microphone connected to a
+stethoscope via a 3.5 mm jack cable, with data captured directly and sent to a mobile
+application for analysis.
+            <br />
+            <br />
+            The primary goal is to differentiate between healthy and unhealthy individuals based on
+breath sounds captured by these two methods. By leveraging these devices, the research
+demonstrates the feasibility of using 1ioacoustics data for accurate respiratory health
+diagnostics.
+In the pursuit of improving 1ioacoustics signal capture technology, this thesis emphasizes
+enhancing sensor sensitivity and user comfort to capture a comprehensive range of signals 
+2
+non-invasively. Ensuring the stability and performance of hardware and software
+components over extended periods is essential for reliable long-term monitoring. User
+acceptance is also crucial, necessitating privacy measures to protect sensitive health data
+and addressing concerns about data security and ethical usage. Furthermore, the
+development of cost-effective solutions is imperative to ensure that these advanced
+technologies are accessible to a wider population, particularly in resource-limited settings
+            <br />
+            <br />
+            By achieving these objectives, this research contributes significantly to the field of
+respiratory diagnostics, providing a robust framework for future advancements in
+2ioacoustics signal capture and analysis. The integration of explainable AI in this context
+not only enhances diagnostic accuracy but also ensures transparency and trust in the
+technology, paving the way for broader adoption in clinical settings. This work represents
+a step forward in leveraging modern technological advancements to address pressing
+healthcare challenges, ultimately improving patient outcomes and advancing public
+health
+          </p>
+          <div class="references">
+            <p class="pt-sm-1"><strong>References</strong></p>
+            <ol>
+              <li>Patel, A., Smith, B. (2023). Advancements in Bioacoustic Signal Capture
+                Technology for Respiratory Disease Diagnostics. Journal of Medical Engineering, 25(3),
+                123-135.
+              </li>
+              <li>Johnson, C., et al. (2022). Exploring the Potential of Explainable AI in Respiratory
+                Disease Diagnostics: A Systematic Review. Artificial Intelligence in Medicine, 18(4),
+                567-580. </li>
+              <li>Lee, S., et al. (2021). Sensor Sensitivity Optimization for Non-invasive Bioacoustic
+                Signal Capture. Sensors and Actuators A: Physical, 30(2), 89-102
+              </li>
+              <li>Smith, J., et al. (2023). Stability Analysis of Hardware and Software Components in
+                Long-term Monitoring Systems. IEEE Transactions on Biomedical Engineering, 40(1),
+                56-68. </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- Research Gap -->
+      <div id="research_gap" class="sub-section">
+        <h2>Research Gap</h2>
+        <p>Following areas are the research gaps found in most of the recent researches.</p>
+        <div class="row mt-5 research-gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-search fa-3x " aria-hidden="true" style="color: blue; "></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                  <h5>Developing hardware and software for capturing bioacoustic signals </h5>
+                </div>
+                <div>
+                  <p style="text-align: justify;"> The objectives of developing and optimizing hardware and software for capturing bioacoustic signals from the human body​
+                  ​. </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-chart-line fa-3x " aria-hidden="true" style="color: blue;"></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                  <h5>Enhanced X-Ray respiratory Diagnostics with Interpretability for Non-Experts​ </h5>
+                </div>
+                <div>
+                  <p style="text-align: justify;">Multimodal Fusion and Explainable AI for Enhanced X-Ray respiratory Diagnostics with Interpretability and Uncertainty Quantification for Non-Experts​.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-comments fa-3x " aria-hidden="true" style="color: blue;"></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                  <h5>Provides interpretable explanations for the generated predictions. ​</h5>
+                </div>
+                <div>
+                  <p style="text-align: justify;">Developing and training an integrated system that performs both the analysis of bioacoustic signals and provides interpretable explanations for the generated predictions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Research Problem -->
+      <div id="research_problem" class="sub-section">
+        <h2>Research Problem & Solution</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+            <h5><strong>Proposed Problem</strong></h5>
+            </br>
+            <h4 class="highlight">Our biggest challenge</h4>
+            <p></p>
+            <p style="text-align: justify;">Respiratory diseases, such as chronic obstructive pulmonary disease, require precise, non-invasive diagnostic tools for early 
+              detection and effective management. Traditional diagnostic methods, including stethoscope auscultation and X-ray imaging, often necessitate expert interpretation and can be 
+              invasive or uncomfortable for patients, limiting their suitability for continuous monitoring and early diagnosis. Current bioacoustic signal capture technologies present an 
+              alternative but face significant challenges, including a compromise between sensor sensitivity and comfort, performance degradation over time, user discomfort, privacy concerns,
+               and high costs, which restrict their widespread adoption and effectiveness
+            </p>
+            </br>
+          </div>
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div class="section-figure">
+                <iframe width="100%" height="315" src="hhttps://youtu.be/fvaf12kLS6I?si=9yMy6XMrtG5wpiqJ" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+                <p>Product Feedback Video</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5><strong>Proposed Solution</strong></h5>
+          </br>
+          <p style="text-align: justify;"> This research proposes developing and optimizing hardware and software systems for capturing bioacoustic signals to improve the diagnosis and monitoring of respiratory diseases. The focus is on enhancing sensor
+             sensitivity to detect subtle respiratory sounds while ensuring comfort for long-term use. Stability and performance of the hardware and software over extended periods will be prioritized to enable reliable continuous monitoring. To increase user acceptance,
+              the design will incorporate user-friendly features and robust privacy measures. Additionally, the research aims to create cost-effective solutions, making advanced respiratory diagnostics accessible to a broader population. Utilizing explainable AI will 
+              further enhance diagnostic accuracy and transparency, ultimately improving patient outcomes and public health.</P>
+        </div>
+      </div>
+      <!-- Research Objectives -->
+      <div id="research_objectives" class="sub-section">
+        <div class="container">
+          <h2 class="pb-5 pt-5 text-center mb-5 display-5">Research Objectives</h2>
+          <!-- First Content Section-->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-pen"></i></div>
+            </div>
+            <div class="col-6">
+              <h4>Improve sensor sensitivity and comfort to accurately capture a wide range of bioacoustic signals non-invasively​
+
+                ​.
+              </h4>
+              <p style="text-align: justify;">Enhance sensor sensitivity and comfort to accurately and non-invasively capture a broad spectrum of bioacoustic signals. This advancement aims to facilitate early diagnosis and continuous monitoring of respiratory diseases by ensuring high-fidelity data collection without compromising patient comfort. By addressing the balance between sensitivity and usability, the goal is to improve the practicality and effectiveness of bioacoustic monitoring devices, enabling reliable long-term health management and better patient outcomes..</p>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+              <h4>Leveraging Audio Spectrogram Transformer (AST) for Advanced Respiratory Sound Analysis.
+              </h4>
+              <p style="text-align: justify;">Adopt AST for enhanced pattern recognition in spectrogram-based audio data,
+                 leveraging the transformer architecture's ability to handle sequential data. This makes it ideal for capturing 
+                 the temporal dynamics of respiratory sounds. By effectively analyzing these patterns, AST ensures precise,
+                  non-invasive diagnostics, facilitating early detection and continuous monitoring of respiratory diseases. 
+                  This approach promises significant improvements in diagnostic accuracy and patient outcomes through advanced 
+                  audio data analysis..</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-pen"></i></i></div>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!-- Third Content Section -->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-pen"></i></div>
+            </div>
+            <div class="col-6">
+              <h4>Patch-Mix Contrastive Learning for Enhanced Respiratory Disease Classification.
+              </h4>
+              <p style="text-align: justify;">
+                A novel approach to refine the model's ability to distinguish between disease-specific sound signatures.
+                 Patch-Mix Contrastive Learning enhances latent space representations by contrasting mixed audio samples.
+                  This leads to improved classification accuracy, allowing for more precise identification of respiratory conditions. 
+                  By effectively differentiating between subtle variations in respiratory sounds, this method significantly enhances 
+                  diagnostic capabilities and supports continuous monitoring, ultimately improving patient outcomes and healthcare 
+                  efficiency.
+              </p>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+              <h4>Vision-Language Model for Automated Chest X-ray Abnormality Detection.
+              </h4>
+              <p style="text-align: justify;">A core AI technology facilitating automatic detection of abnormalities 
+                in chest X-rays, generating detailed notes on identified issues' type and location. 
+                This model enhances diagnostic accuracy and efficiency, streamlining clinical 
+                workflows and improving patient care by providing comprehensive, automated X-ray analysis.</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-pen"></i></div>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Methodology -->
+      <div id="methodology" class="sub-section">
+        <h2>Methodology</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div class="section-figure">
+                <img src="./Images/other/archi.png" width="100%" />
+                <p>Figure 2. High Level Architecture of the system.</p>
+              </div>
+            </div>
+            <div class="section-left">
+              <div class="section-figure ">
+                <img style="align-items:center" src="./Images/other/sys2.gif" width="100%">
+              </div>
+            </div>
+          </div>
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+            <p>The proposed system consists of 3 main components. They are;</p>
+            <ol>
+              <li><strong>Developing and optimizing of the hardware and software needed to capture bioacoustics signals</strong></li>
+              <li><strong>Advancing Lung Sound Classification: Novel Audio Augmentation in Transformer Latent Space​</strong></li>
+              <li><strong>Implementing AI in Respiratory X-Ray Diagnostics</strong></li>
+              
+            </ol>
+            <p> The hardware component of bioacoustic signal capture systems has seen substantial
+              advancements, particularly with the advent of microcontrollers and high-fidelity
+              microphones. The ESP32 microcontroller, known for its low power consumption and
+              integrated Wi-Fi and Bluetooth capabilities, has been widely adopted in IoT applications,
+              including medical diagnostics.
+              The INMP441 omnidirectional microphone, noted for its high signal-to-noise ratio and
+              low distortion, has been utilized in various bioacoustic applications. Research by D. S.
+              Kumar et al. (2019) demonstrated its efficacy in capturing high-quality respiratory sounds,
+              crucial for accurate diagnostics.
+              <br />
+              <br />
+              The stability and performance of hardware and software over extended monitoring periods
+              are vital for reliable diagnostics. Continuous monitoring systems must be robust against
+              environmental variations and user-induced noise. Studies by H. L. Chang et al. (2021)
+              focused on enhancing the durability and accuracy of wearable bioacoustic sensors through
+              advanced materials and adaptive algorithms.
+              5
+              Software stability is equally important. The integration of real-time data processing and
+              cloud storage, as demonstrated in systems using AWS for data management, ensures that
+              diagnostic data is both secure and accessible. The Arduino IDE’s role in facilitating rapid
+              prototyping and deployment of bioacoustic capture systems has been extensively
+              documented in educational and professional research, emphasizing its utility in
+              developing stable and scalable solutions.
+
+              <br /> <br />
+              </p>
+          </div>
+        </div>
+      </div>
+      <!-- Technologies Used -->
+      <div id="tech_used" class="sub-section">
+        <h2>Technologies Used</h2>
+        <div class="row technology mt-5">
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/python.png" alt="Python">
+            </div>
+            <p>Python</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/flask.png" alt="Flask">
+            </div>
+            <p>Flask</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/tensorflow.png" alt="Tensorflow">
+            </div>
+            <p>Tensorflow</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/keras.png" alt="Keras">
+            </div>
+            <p>Keras</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/deepface.png" alt="DeepFace">
+            </div>
+            <p>Deep Face</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/opencv.png" alt="OpenCV">
+            </div>
+            <p>OpenCV</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/numpy.png" alt="NumPy">
+            </div>
+            <p>NumPy</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/PyTorch.png" alt="PyTorch">
+            </div>
+            <p>PyTorch</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/pycharm.png" alt="PyCharm">
+            </div>
+            <p>PyCharm</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/chartjs.png" alt="Chart.js">
+            </div>
+            <p>Chart.js</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/bootstrap.png" alt="Bootstrap">
+            </div>
+            <p>Bootstrap</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/tech/Nvidia_CUDA.jpg" alt="Nvidia CUDA">
+            </div>
+            <p>Nvidia CUDA</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Milestones -->
+  <section id="milestones" class="main-sections">
+    <div class="container">
+      <h5 class="section-headings">Milestones</h5>
+      <div class="sub-section">
+        <h2>Timeline in Brief</h2>
+        <div class="milestones">
+          <ul class="timeline">
+            <!-- Project Topic Assessment -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">February 2023</p>
+                <h3>Project Topic Assessment</h3>
+                <p>Initial topic assessment document of the proposed research was submitted for
+                  evaluation. The submitted document included a brief overview on key aspects of
+                  the proposed research along with the research problem, research objectives,
+                  overall solution as well as member task breakdown. </p>
+                <p><strong>Marks Allocated : </strong>No marks allocated</p>
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 0%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Project Charter Submission -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">February 2023</p>
+                <h3>Project Charter</h3>
+                <p>Once the topic was finalized, the project charter document
+                  was submitted for evaluation. This document also included a brief
+                  overview on key aspects of the proposed research along with the research
+                  problem, research objectives, overall solution as well as member task breakdown of
+                  the proposed research. </p>
+                <p><strong>Marks Allocated : </strong>No marks allocated</p>
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 0%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Project Proposal Presentation -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">March 2023</p>
+                <h3>Project Proposal Presentation</h3>
+                <p>Presented to a panel of judges in order to provide an overview of the proposed research. </p>
+                <p><strong>Marks Allocated : </strong>6</p>
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 6%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">6%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Project Proposal Report -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">March 2023</p>
+                <h3>Project Proposal Report</h3>
+                <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your
+                  project approved.The submission of a report which provides an in-depth analysis pertaining to
+                  key aspects of the proposed research along with the research problem, objectives, as well as the
+                  overall proposed solution.</p>
+                <p><strong>Marks Allocated : </strong>6</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 6%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 6%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">6%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Progress Presentation I -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">May 2023</p>
+                <h3>Progress Presentation I</h3>
+                <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or
+                  inconsistencies in the design/requirements.</p>
+                <p><strong>Marks Allocated : </strong>15</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 12%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Status Document I -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">May 2023</p>
+                <h3>Status Document I</h3>
+                <p>The submission of a document that provides an overview of key tasks conducted by members
+                  during the implementation PPI phase of the research. </p>
+                <p><strong>Marks Allocated : </strong>1</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 27%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 1%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">1%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Research Paper -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">June 2023</p>
+                <h3>Research Paper</h3>
+                <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you
+                  referred in making new knowledge</p>
+                <p><strong>Marks Allocated : </strong>10</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Progress Presentation II -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">September 2023</p>
+                <h3>Progress Presentation II</h3>
+                <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with
+                  a Poster presesntation which describes the project as a whole.</p>
+                <p><strong>Marks Allocated : </strong>18</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 38%" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 18%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">18%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Status Document II -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">September 2023</p>
+                <h3>Status Document II</h3>
+                <p>The submission of a document that provides an overview of key tasks conducted by members
+                  during the implementation PPII phase of the research. </p>
+                <p><strong>Marks Allocated : </strong>1</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">1%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Final Report -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">November 2023</p>
+                <h3>Final Report</h3>
+                <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes
+                  marks for Individual (15%) &amp; group (4%) reports and also Final report.</p>
+                <p><strong>Marks Allocated : </strong>19</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 19%" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100">19%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Logbook -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">November 2023</p>
+                <h3>Logbook</h3>
+                <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 &amp;
+                  2.</p>
+                <p><strong>Marks Allocated : </strong>1</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">1%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Final Presentation and Viva -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">November 2023</p>
+                <h3>Final Presentation &amp; Viva</h3>
+                <p>Final evaluation of the completed product. Viva is held individually to assess each members
+                  contribution to the project.</p>
+                <p><strong>Marks Allocated : </strong>20</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">20%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Website -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">November 2023</p>
+                <h3>Website Assessment</h3>
+                <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                <p><strong>Marks Allocated : </strong>2</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">2%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Downloads -->
+  <section id="downloads" class="main-sections">
+    <div class="container">
+      <h5 class="section-headings">Downloads</h5>
+      <!-- Documents -->
+      <div class="sub-section">
+        <h2>Documents</h2>
+        <p>Please find all documents related to this project below.</p>
+        <div class="row mt-sm-5 downloads-container">
+          <!-- Topic Assessment -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-pdf fa-w-12 mr-2 download-pdf"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-pdf mr-2 download-pdf"></i> Font Awesome fontawesome.com -->Topic
+                  Assessment</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/02/13</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1YLkyioJyd7-UiL5Fv8f3XSJIOhUqz11H/view?usp=sharing"
+                    target="_blank">Download</a></li>
+                <!-- <li class="list-group-item">Individual<a href="">Download</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- Project Charter -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-pdf fa-w-12 mr-2 download-pdf"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-pdf mr-2 download-pdf"></i> Font Awesome fontawesome.com -->Project
+                  Charter</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/03/14</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1bkHzsrv7xZGjKd4Z2w7m4WwwpX78-nZF/view?usp=sharing"
+                    target="_blank">Download</a></li>
+                <!-- <li class="list-group-item">Individual<a href="">Download</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- Project Proposal -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-pdf fa-w-12 mr-2 download-pdf"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-pdf mr-2 download-pdf"></i> Font Awesome fontawesome.com -->Project
+                  Proposal</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/08/25</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/10XTTVnQl-C36ySQkRxZ596792VqZXpbD?usp=drive_link"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Status Documents -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-pdf fa-w-12 mr-2 download-pdf"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-pdf mr-2 download-pdf"></i> Font Awesome fontawesome.com -->Status
+                  Documents I</h5>
+                <p class="card-text pt-sm-2">Submitted on 2024/03/19</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <!-- <li class="list-group-item">Group<a href="">Download</a></li> -->
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1WLBALQcxaIxomX_oC6uBf7opVHcKZMIr?usp=drive_link"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Status Documents -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-pdf fa-w-12 mr-2 download-pdf"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-pdf mr-2 download-pdf"></i> Font Awesome fontawesome.com -->Status
+                  Documents II</h5>
+                <p class="card-text pt-sm-2">Submitted on 2024/05/11</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <!-- <li class="list-group-item">Group<a href="">Download</a></li> -->
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1c-x71h4Ai3ybGIjBPMuUVDjS_MsqOIOe?usp=drive_link"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Research -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-pdf fa-w-12 mr-2 download-pdf"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-pdf mr-2 download-pdf"></i> Font Awesome fontawesome.com -->Research
+                  Paper</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/09/15</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1eEdjBiyL4Mv4szKEQYTQkjj-mSoIZaXT/view?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Final Report -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-pdf fa-w-12 mr-2 download-pdf"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-pdf mr-2 download-pdf"></i> Font Awesome fontawesome.com -->Final
+                  Report</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/10/13</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1EKKb8PxeTiMaGzOA-rov7L_gJRJWZ7eS/view?usp=drive_link"
+                    target="_blank">Download</a></li>
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/19fviXuc-HNlM2rAdSj2GjdusPi3IBAFk?usp=drive_link"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Poster -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-image fa-w-12 mr-2 download-image"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-image" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-image mr-2 download-image"></i> Font Awesome fontawesome.com -->Poster
+                </h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/10/13</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1puVR13cEvTl5s4T3D03E218TQfGVH4Ec/view?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Presentations -->
+      <div id="presentations" class="sub-section">
+        <h2>Presentations</h2>
+        <p>Please find all presentations related this project below.</p>
+        <div class="row mt-sm-5 downloads-container">
+          <!-- Project Proposal -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-powerpoint fa-w-12 mr-2 download-powerpoint"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-powerpoint" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M193.7 271.2c8.8 0 15.5 2.7 20.3 8.1 9.6 10.9 9.8 32.7-.2 44.1-4.9 5.6-11.9 8.5-21.1 8.5h-26.9v-60.7h27.9zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm53 165.2c0 90.3-88.8 77.6-111.1 77.6V436c0 6.6-5.4 12-12 12h-30.8c-6.6 0-12-5.4-12-12V236.2c0-6.6 5.4-12 12-12h81c44.5 0 72.9 32.8 72.9 77z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i> Font Awesome fontawesome.com -->Project
+                  Proposal</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/03/29</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://docs.google.com/presentation/d/1LmyMBtrVroBhFqd0ooP71-mK7WEmAqg1/edit?usp=sharing&ouid=101600118648229682764&rtpof=true&sd=true"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Progress Presentation I -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-powerpoint fa-w-12 mr-2 download-powerpoint"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-powerpoint" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M193.7 271.2c8.8 0 15.5 2.7 20.3 8.1 9.6 10.9 9.8 32.7-.2 44.1-4.9 5.6-11.9 8.5-21.1 8.5h-26.9v-60.7h27.9zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm53 165.2c0 90.3-88.8 77.6-111.1 77.6V436c0 6.6-5.4 12-12 12h-30.8c-6.6 0-12-5.4-12-12V236.2c0-6.6 5.4-12 12-12h81c44.5 0 72.9 32.8 72.9 77z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i> Font Awesome fontawesome.com -->Progress
+                  Presentation I</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/05/23</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://docs.google.com/presentation/d/1w_gETMyB5SPj-sd6rQGzIh9_b5a2Tffc/edit?usp=sharing&ouid=101600118648229682764&rtpof=true&sd=true"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Progress Presentation II -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-powerpoint fa-w-12 mr-2 download-powerpoint"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-powerpoint" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M193.7 271.2c8.8 0 15.5 2.7 20.3 8.1 9.6 10.9 9.8 32.7-.2 44.1-4.9 5.6-11.9 8.5-21.1 8.5h-26.9v-60.7h27.9zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm53 165.2c0 90.3-88.8 77.6-111.1 77.6V436c0 6.6-5.4 12-12 12h-30.8c-6.6 0-12-5.4-12-12V236.2c0-6.6 5.4-12 12-12h81c44.5 0 72.9 32.8 72.9 77z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i> Font Awesome fontawesome.com -->Progress
+                  Presentation II</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/09/05</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://docs.google.com/presentation/d/1xhIMY_-Vz1UcUxq9mWUCZckSjrVol5Z9/edit?usp=sharing&ouid=101600118648229682764&rtpof=true&sd=true"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Final Presentation -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><svg class="svg-inline--fa fa-file-powerpoint fa-w-12 mr-2 download-powerpoint"
+                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-powerpoint" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M193.7 271.2c8.8 0 15.5 2.7 20.3 8.1 9.6 10.9 9.8 32.7-.2 44.1-4.9 5.6-11.9 8.5-21.1 8.5h-26.9v-60.7h27.9zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm53 165.2c0 90.3-88.8 77.6-111.1 77.6V436c0 6.6-5.4 12-12 12h-30.8c-6.6 0-12-5.4-12-12V236.2c0-6.6 5.4-12 12-12h81c44.5 0 72.9 32.8 72.9 77z">
+                    </path>
+                  </svg><!-- <i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i> Font Awesome fontawesome.com -->Final
+                  Presentation</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/11/02</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://docs.google.com/presentation/d/1nVzu5UTWp7n4LL7Xec-uUYlMMk6HTJW2/edit?usp=sharing&ouid=101600118648229682764&rtpof=true&sd=true"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us -->
+  <section id="about" class="main-sections " style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">About Us</h5>
+      <div class="sub-section about-us-container ">
+        <h2>Meet Our Team !</h2>
+        <div class="row  mt-sm-5 ">
+          <!-- Supervisor -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="./Images/dp/supervisor.JPG" class="about-us-image supervisor" alt="Mr. Jeewaka Perera"
+                height="">
+              <div class="card-body">
+                <h5 class="card-title">Mr. Jeewaka Perera</h5>
+                <br>
+                <span class="badge badge-secondary">Supervisor</span>
+                <div class="text-group">
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p> Faculty of Computing | Computer Science & Software Engineering </p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://scholar.google.com/citations?hl=en&user=qGqoX-QAAAAJ&amp;hl=en"><svg
+                      class="svg-inline--fa fa-google fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 488 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                      </path>
+                    </svg><!-- <i class="fab fa-google mr-2"></i> Font Awesome fontawesome.com -->G-Scholar</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:jeewaka.p@sliit.lk"><svg
+                      class="svg-inline--fa fa-envelope-open-text fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z">
+                      </path>
+                    </svg><!-- <i class="fas fa-envelope-open-text mr-2"></i> Font Awesome fontawesome.com -->E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Co Supervisor -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="./Images/dp/cosupervisor.jpg" class="about-us-image cosupervisor" alt="Ms. Pradeepa Bandara"
+                height="">
+              <div class="card-body">
+                <h5 class="card-title">Ms. Pradeepa Bandara</h5>
+                <br>
+                <span class="badge badge-secondary">Co-Supervisor</span>
+                <div class="text-group">
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p> Faculty of Computing | Information Technology </p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://scholar.google.com/citations?user=8XK6ur0AAAAJ&hl=en"><svg
+                      class="svg-inline--fa fa-google fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 488 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                      </path>
+                    </svg><!-- <i class="fab fa-google mr-2"></i> Font Awesome fontawesome.com -->G-Scholar</a>
+                  <!-- <a class="card-text" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/dilani-lunugalage-84b78433"><svg
+                      class="svg-inline--fa fa-linkedin-in fa-w-14 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                      </path>
+                    </svg> -->
+                  <!-- <i class="fab fa-linkedin-in mr-2"></i> Font Awesome fontawesome.com -->
+                  <!-- LinkedIn</a> -->
+                  <a class="card-text" style="cursor: pointer;" href="mailto:pradeepa.b@sliit.lk"><svg
+                      class="svg-inline--fa fa-envelope-open-text fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z">
+                      </path>
+                    </svg><!-- <i class="fas fa-envelope-open-text mr-2"></i> Font Awesome fontawesome.com -->E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- external Supervisor -->
+        </div>
+        <div class="row  mt-sm-5" style="justify-content: center">
+          <!-- anuka -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="./Images/dp/anuka.png" class="about-us-image " alt="Rathnayaka R.K.A.R.">
+              <div class="card-body">
+                <h5 class="card-title">Rathnayaka R.K.A.R.</h5>
+                <br>
+                <span class="badge badge-secondary">Group Leader</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Information Technology</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/anuka-rathnayaka/"><svg
+                      class="svg-inline--fa fa-linkedin-in fa-w-14 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                      </path>
+                    </svg><!-- <i class="fab fa-linkedin-in mr-2"></i> Font Awesome fontawesome.com -->LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:anukarathnayaka098@gmail.com"><svg
+                      class="svg-inline--fa fa-envelope-open-text fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z">
+                      </path>
+                    </svg><!-- <i class="fas fa-envelope-open-text mr-2"></i> Font Awesome fontawesome.com -->E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Sasindu -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="./Images/dp/sasindu.png" class="about-us-image" alt="Mallawarachchi S.M.A.">
+              <div class="card-body">
+                <h5 class="card-title">Mallawarachchi S.M.A.</h5>
+                <br>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Information Technology</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/sasindu-mallawarachchi-500136217/"><svg
+                      class="svg-inline--fa fa-linkedin-in fa-w-14 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                      </path>
+                    </svg><!-- <i class="fab fa-linkedin-in mr-2"></i> Font Awesome fontawesome.com -->LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:sasindumallawarachchi28@gmail.com"><svg
+                      class="svg-inline--fa fa-envelope-open-text fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z">
+                      </path>
+                    </svg><!-- <i class="fas fa-envelope-open-text mr-2"></i> Font Awesome fontawesome.com -->E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Nadun -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="./Images/dp/nadun.png" class="about-us-image" alt="Wijesiriwardana H.G.N.D." height="">
+              <div class="card-body">
+                <h5 class="card-title">Wijesiriwardana H.G.N.D.</h5>
+                <br>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Information Technology</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;" href="https://www.linkedin.com/in/ndilsh/"><svg
+                      class="svg-inline--fa fa-linkedin-in fa-w-14 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                      </path>
+                    </svg><!-- <i class="fab fa-linkedin-in mr-2"></i> Font Awesome fontawesome.com -->LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:nadundilsh31@gmail.com"><svg
+                      class="svg-inline--fa fa-envelope-open-text fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z">
+                      </path>
+                    </svg><!-- <i class="fas fa-envelope-open-text mr-2"></i> Font Awesome fontawesome.com -->E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Shehani -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="./Images/dp/shehani.png" class="about-us-image" alt="Perera S.S.A.">
+              <div class="card-body">
+                <h5 class="card-title">Perera S.S.A.</h5>
+                <br>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Information Technology</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/shehani-perera-997754232/"><svg
+                      class="svg-inline--fa fa-linkedin-in fa-w-14 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                      </path>
+                    </svg><!-- <i class="fab fa-linkedin-in mr-2"></i> Font Awesome fontawesome.com -->LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:ssanneperera@gmail.com"><svg
+                      class="svg-inline--fa fa-envelope-open-text fa-w-16 mr-2" aria-hidden="true" focusable="false"
+                      data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" data-fa-i2svg="">
+                      <path fill="currentColor"
+                        d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z">
+                      </path>
+                    </svg><!-- <i class="fas fa-envelope-open-text mr-2"></i> Font Awesome fontawesome.com -->E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Achievements -->
+  <!-- Promo Banner -->
+  <section id="banner" class="main-sections">
+    <div class="promo-banner">
+      <div class="container">
+
+        <div class="section-center">
+          <div class="section-figure">
+            <img src="./Images/logo/logo2.png" width="40%" />
+          </div>
+        </div>
+      </div>
+      <h2 class="promo-banner-title">Will be available soon!</h2>
+      <p class="promo-banner-text">Edu Watch application will be soon available for download.
+      </p>
+      <!-- <div class="section-center">
+        <div class="section-figure">
+          <a href=""><img src="./Images/back/playstore.png" width="15%" /></a>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- Contact Us -->
+  <section id="contact" class="main-sections" style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">Contact Us</h5>
+      <div class="sub-section">
+        <h2>Get in Touch</h2>
+        <div class="row  mt-sm-5">
+          <div class="col-md-6 col-sm-12 contact-form">
+            <form action="MAILTO:brightminds@gmail.com" method="POST" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Message or Query</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btncolorgradient	">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6 col-sm-12 contact-details">
+            <div>
+              <p><strong>Contact Details</strong></p>
+              <p>For further queries please reach us at <a
+                  href="mailto: eduwatch227@gmail.com">eduwatch227@gmail.com</a></p>
+              <p>Hope this project helped you in some manner. Thank you!</p>
+              <p>-Team EduWatch </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script src="./lib/jquery/jquery-3.5.1.slim.min.js"></script>
+  <script src="./lib/fontawesome/js/all.min.js"></script>
+  <script src="./lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
