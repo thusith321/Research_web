@@ -8,7 +8,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
+            "name": "index.html",
             "file": "/Users/thusithhettiarachchi/Desktop/Edu-Watch-Website-main/index.html"
         }
     ]
